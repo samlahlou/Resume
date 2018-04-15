@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+		<meta charset="utf-8">
+
+		<!-- importation du responsive design -->
+		<meta name="viewport" content="width=device-width" />
+
+		 <!-- importation de la police -->
+		<link href="https://fonts.googleapis.com/css?family=Lato|Quicksand:300" rel="stylesheet">
+
+		<!-- lien vers le fichier css -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		
+
+</head>
+
+<body>
+	
+	<main>
+
+		<div class = "sidebar">
+
+			<i class="fa fa-info-circle fa-2x" id="bulle-trigger" aria-hidden="true">
+				<section id="bulle">
+					Age: 28 ans<br/>
+					Adresse: 152, avenue des Myosotis - Gonesse 95500<br/>
+					Email: s.lahlou777@hotmail.com<br/>
+					Mobile: +33 7 68 83 22 35<br/>
+					Website: http://comingsoon...<br/>
+					Portfolio: http://comingsoon...
+				</section>
+			</i>
+
+			<i class="fa fa-file-video-o fa-2x" aria-hidden="true"></i>
+
+			<i class="fa fa-life-ring fa-2x" aria-hidden="true"></i>
+
+		</div>
+
+		<div class = contenair>
+
+			<header class="entete">
+
+			
+
+				<img src="src/photo_profil.jpg">
+
+				<h1>SAMIR LAHLOU</h1>
+
+				<h2>DÉVELOPPEUR JAVA/JEE JUNIOR</h2>
+
+				<p>Samir Lahlou. Développeur JAVA étudiant à <strong><a href="https://simplon.co/">Simplon.co</a></strong>.<br/>
+				J'ai achevé un stage chez ERSS SAS en développement <strong>JAVA</strong> du <strong>15 janvier au 16 février</strong>.<br/>
+				Je suis orienté développement back-end avec les langages <strong>JAVA</strong>, <strong>JAVA EE</strong>, <strong>Spring</strong>, et <strong>PHP</strong><br/>
+				et front-end manipulant <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.<br/>
+				N'hésitez pas à survoler les icônes sur la gauche pour davantage d'informations, ou cliquer sur le boutons ci-dessous pour visualiser mon CV vidéo.</p>
+
+				<input type="button" value="CV VIDÉO" id="submitBtn">
+
+					<div id="video" class="mavideo">
+						<span class="close">&times;</span>
+						<video class="video_content"  controls>
+							<source id="myvideo" src="src/video.mp4" type="video/mp4">
+						</video>
+					</div>
+
+			</header>
+
+			<section class="network">
+
+				<div class="network_box">
+
+					<div class="linkedin">
+
+						<a href = "https://www.linkedin.com/in/samir-lahlou-43a655151/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+
+						<span>Linkedin</span></a>
+
+					</div>
+
+					<div class="facebook">
+
+						<a href = "https://github.com/samlahlou"><i class="fa fa-github fa-2x" aria-hidden="true"></i>
+
+						<span>Github</span></a>
+
+					</div>
+
+					<div class="twitter">
+
+						<a href = "https://www.google.fr/webhp?tab=ww"><i class="fa fa-google fa-2x" aria-hidden="true"></i>
+
+						<span>Google</span></a>
+
+					</div>
+
+				</div>
+
+			</section>
+
+			<section>
+
+				<div class = "skills">
+
+					<h3>SKILLS</h3>
+					
+					<span>Front-end<br/>
+
+						<progress class = "b1" value="70" max="100">90%</progress></span>
+
+					<span>Back-end<br/>
+
+						<progress class = "b2" value="80" max="100">80%</progress></span>
+
+					<span>Mobile<br/>
+
+						<progress class = "b3" value ="30" max="100">30%</progress></span>
+
+				</div>
+
+			</section>
+
+			<section class="movies">
+
+				<h3>EXPÉRIENCES PROFESSIONNELLE</h3>
+
+				<div class="m1">
+
+					<div class="image">
+
+						<img src="src/econocom.jpg">
+
+					</div>
+
+					<div class="texte">
+
+						<h5>Octobre 2014 - Mai 2016: Technicien Helpdesk N2/Proximité</h5>
+
+						<p>Technicien Helpdesk N2 et proximité - Econocom. DSI Hermès Paris<br>
+						Résolution d'incidents, administration systèmes et réseaux, rédaction de procédures.</p>
+
+					</div>
+
+				</div>
+
+				<div class="m2">
+
+					<div class="image">
+
+						<img src="src/consort.jpg">
+
+					</div>
+
+					<div class="texte">
+
+						<h5>Septembre 2013 - Octobre 2014: Technicien Helpdesk N1/N2</h5>
+
+						<p>Technicien Helpdesk N1/N2 - Consort NT. DSI BP2I<br/>
+						Résolution d'incidents, reprise de contexte, astreinte international.</p>
+
+					</div>
+
+				</div>
+
+			</section>
+
+			<footer>
+
+				<h3 class="foot">CENTRE D'INTÉRÊTS</h3>
+
+				<div class ="icon">
+
+					<i class="fa fa-book fa-2x" aria-hidden="true"></i>
+
+					<i class="fa fa-gamepad fa-2x" aria-hidden="true"></i>
+
+					<i class="fa fa-futbol-o fa-2x" aria-hidden="true"></i>
+
+				</div>
+
+					<p>Lecture</p>
+					<p>Mobile gaming</p>
+					<p>Musculation, natation</p>
+
+			</footer>
+
+		</div>
+
+	</main>
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://use.fontawesome.com/64906f59e1.js"></script>
+	<script type="text/javascript">
+		var video = document.getElementById('video');
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var btn = document.getElementById('submitBtn');
+		var img = document.getElementById("myvideo");
+		btn.onclick = function(){
+		    video.style.display = "block";
+		    img.src = this.src;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() { 
+		  video.style.display = "none";
+		}
+		
+		var span = document.getElementsByClassName("close")[0];
+		var vid = document.getElementsByClassName("video_content")[0];
+		span.onclick = function() { 
+		  video.style.display = "none";
+		  	vid.pause();
+			vid.currentTime = 0;
+		return false;
+		}
+		
+	</script>
+
+	<!-- lien vers le fichier javascript -->
+		<!--<script type="text/javascript" src="cv.js"></script>-->
+		
+
+</body>
+
+</html>
